@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brand's Section</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="header">
-        <nav class="header_nav1"></nav>
+        <nav class="header_nav1">
+            <div class="header_nav1_div" id="title">𝕆𝕟𝕝𝕚𝕟𝕖 𝕁𝕖𝕒𝕟𝕤 𝕊𝕙𝕠𝕡</div>
+            <div class="header_nav1_div search">
+                
+                    <input id="search" type="search" placeholder=" search here your type ......."  >
+                    <button type="button" onclick="">Go</button>
+              
+            </div>
+            <div class="header_nav1_div" id="icons_navbar">
+                <a href="#"><i class="fa-solid fa-heart" ></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" onclick="toggleMenu(event)"><i class="fa-solid fa-user" ></i></a>
+            </div>
+            <div class="sample">
+                <button>Log In</button>
+                <button>Sign Up</button>
+            </div>
+        </nav>
         <nav class="header_nav2">
             <div class="header_nav2_div">
                 <a class="header_nav2_div_a" href="index.html">Home</a>
-                <a class="header_nav2_div_a" href="mans.html">Man</a>
+                <a class="header_nav2_div_a" href="mans.html" target="_blank">Man</a>
                 <a class="header_nav2_div_a" href="women.html">Woman</a>
                 <a class="header_nav2_div_a" href="kids.html">Kids</a>
                 <a class="header_nav2_div_a" href="brands.html">Brand</a>
             </div>
         </nav>
-
-        
     </div>
+    <script src="app.js"></script>
+
 </body>
 </html>
