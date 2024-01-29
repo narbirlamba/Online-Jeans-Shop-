@@ -132,7 +132,7 @@ body{
     right: 0px;
     top: 55px;
     z-index: 2;
-    transition: all .9s ease;
+    transition: all .5s ease;
     border-radius: 0 0 0 10px;
 }
 .visible{
@@ -154,3 +154,26 @@ body{
   background-color: rgb(255, 137, 94);
   transform: translateY(2px);
 }
+#visiting_card{
+    position: fixed;
+    font-size: 17px;
+    top: calc(50% - 110px);
+    z-index: 12;
+    text-align: center;
+
+}
+   
+.visiting_card a button{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    border: none;
+    padding: 10px 8px;
+    width: 2rem;
+    background: #ffaf8c;
+    border-radius:8px;
+    cursor: pointer;
+    /* transform: rotate(180deg); */
+
+}
+    
