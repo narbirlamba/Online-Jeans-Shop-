@@ -84,31 +84,7 @@ body{
     padding: 0 .5rem;
 }
 
-@media(max-width:700px){
-    .display_img1{
-        display: none;
-    }
-    .header_nav1_div{
-        padding: 0 .2rem;
-        font-size:larger;
-    }
-    #search{
-        width: 6rem;
-    }
-    #icons_navbar a{
-        margin: 0 .3rem;
-    }
-    .search input{
-        height: 1.5rem; 
-        width: 15rem;
-        margin-left: 0;
-    }
-    .search button{
-        height: 1.5rem;
-        width: 2.5rem;
-        
-    }
-}
+
 .header_nav2_div_a:hover{
     font-weight: 900;
     font-size: larger;
@@ -157,10 +133,12 @@ body{
 #visiting_card{
     position: fixed;
     font-size: 17px;
-    top: calc(50% - 110px);
+    /* top: calc(50% - 110px); */
     z-index: 12;
     text-align: center;
-
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
    
 .visiting_card a button{
@@ -171,9 +149,56 @@ body{
     padding: 10px 8px;
     width: 2rem;
     background: #ffaf8c;
-    border-radius:8px;
+    border-radius:0 8px 8px 0;
     cursor: pointer;
-    /* transform: rotate(180deg); */
-
 }
+
+
+
+
+
+
+
+
     
+@media(max-width:700px){
+    .display_img1{
+        display: none;
+    }
+    .header_nav1_div{
+        padding: 0 .2rem;
+        font-size:larger;
+    }
+    #search{
+        width: 6rem;
+    }
+    #icons_navbar a{
+        margin: 0 .3rem;
+    }
+    .search input{
+        height: 1.5rem; 
+        width: 15rem;
+        margin-left: 0;
+    }
+    .search button{
+        height: 1.5rem;
+        width: 2.5rem;
+    }
+
+    .visiting_card a button{
+        border-radius:8px 0 0 8px;
+
+    }
+
+    #visiting_card{
+        right: 0;
+        left: auto;
+    }
+}
+@media(max-width:400px){
+    .header_nav1_div{
+        padding: 0 .2rem;
+        font-size:medium;
+        text-align: center;
+    }
+}
