@@ -2,6 +2,7 @@ body{
     margin:0%;
     height: 100%;
 }
+
 .header{
     height: 6.25rem;
 }
@@ -11,6 +12,7 @@ body{
     display: flex;
     align-content: center;
     align-items: center;
+    
 }
 #title:hover{
      color:blueviolet;
@@ -63,6 +65,7 @@ body{
 }
 .home_body{
     width: 100%;
+    height: 450px;
     display: flex;
     justify-content:center;
 }
@@ -131,12 +134,12 @@ body{
   transform: translateY(2px);
 }
 #visiting_card{
-    position: fixed;
+    position: absolute;
     font-size: 17px;
     /* top: calc(50% - 110px); */
     z-index: 12;
     text-align: center;
-    top: 50%;
+    top: 60%;
     left: 0;
     transform: translateY(-50%);
 }
@@ -152,13 +155,117 @@ body{
     border-radius:0 8px 8px 0;
     cursor: pointer;
 }
+#best_Selling_Itemss_Heading{
+    margin-left: 3rem;
+}
+.gallery{
+    width: 880px;
+    display: flex;
+    /* background-color:rgb(216, 174, 255); */
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 860px;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px 10px;
+    /* margin: 20px; */
+    /* background-color: green; */
+    flex: none;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10% auto; */
+    background-color:#ffffff;
 
+}
+#backbtn, #nextbtn{
+    width: 50px;
+    cursor: pointer;
+    margin:40px;
+}
+#backbtn:hover,#nextbtn:hover{
+    filter: drop-shadow(0px 0px 8px rgb(251, 140, 140));
+}
 
+ .gallery div spam{
+    width: 100%;
+    height: 410px;
+}
+.best_Selling_Itemss{
+    background-color: rgba(210, 210, 210, 0.527);
 
+    width: 100%;
+    height: 300px;
+}
+.gallery div img{
+    width: 100%;
+    height: 200px;
+}
+.best_Selling_Itemss h4{
+    margin: 0 0 0 .3rem;
+    font-weight: 900;
+    font-size: larger;
+ }
+ .best_Selling_Itemss h5{
+     margin: 0  0 .3rem .3rem;
+ }
+ .best_Selling_Itemss h6 {
+    font-size: 16px;
+    margin: 0  0 .3rem .3rem;
+}
+ 
+ .best_Selling_Itemss button{
+     margin: 0   .6rem 0 .6rem;
+     width: calc(100% - 1.2rem);
+     border: none;
+     font-size: 15px;
+     font-weight: 700;
+     background-color: white;
+     border: 1px solid blue;
+     height: 1.6rem;
+ 
+ }
+ .best_Selling_Itemss button:hover{
+    background-color: rgb(39, 39, 255);
+    border: 1px solid blue;
+    color: white;
+    cursor: pointer;
+}
+.best_Selling_Itemss button:active{
+    background-color: rgb(116, 116, 255);
+    border: 1px solid blue;
+    color: white;
 
+}
+ .best_Selling_Itemss a i{
+    position: relative;
+    z-index: 2;
+    float: right;
+    top: -180px;;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: x-large;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 0px 4px black);
 
-
-
+}
+.best_Selling_Itemss a i:hover{
+   filter: drop-shadow(0px 0px 8px rgb(255, 0, 0));
+}
+.fa-heart:active{
+    color: rgb(255, 0, 0);
+}
+/* .gallery .pady_rights{
+    padding-right: 20px;
+} */
 
     
 @media(max-width:700px){
@@ -187,13 +294,77 @@ body{
 
     .visiting_card a button{
         border-radius:8px 0 0 8px;
-
     }
 
     #visiting_card{
         right: 0;
         left: auto;
+        top: 40%;
     }
+    #best_Selling_Itemss_Heading{
+        margin-left: .5rem;
+    }
+    
+
+
+
+
+
+
+
+    .gallery{
+        width: 880px;
+    }
+   
+    .gallery div{
+        width: 567px;
+
+        gap: 5px;
+        padding: 10px 0;
+    }
+    .gallery .pady_rights{
+        padding-right: 5px;
+    }
+    #backbtn, #nextbtn{
+        /* display: none; */
+        width: 50px;
+        cursor: pointer;
+        margin:10px;
+    }
+    
+     .gallery div span{
+        height: 293px;
+    }
+    .best_Selling_Itemss{
+        background-color: rgba(229, 211, 196, 0.473);
+    }
+    .gallery div img{
+        width: 100%;
+        height: 200px;
+    }
+    .best_Selling_Itemss h4{
+        margin: 0 0 0 .3rem;
+        font-weight: 900;
+        font-size: larger;
+     }
+     .best_Selling_Itemss h5{
+         margin: 0  0 .3rem .3rem;
+         font-size: 11px;
+     }
+     .best_Selling_Itemss h6 {
+        font-size: 11px;
+        margin: 0  0 .3rem .3rem;
+    }
+     
+     .best_Selling_Itemss a i{
+        top: -188px;;
+        right: 5px;
+    }
+    .best_Selling_Itemss button{
+        font-size: 12px;
+    }
+
+    
 }
 @media(max-width:400px){
     .header_nav1_div{
