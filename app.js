@@ -5,6 +5,11 @@ function toggleMenu() {
     user.style.color = (user.style.color === 'black') ? 'white' : 'black';
     
 }
+function toggleMenu1() {
+  var heart = document.getElementById("heart");
+  heart.style.color = (heart.style.color === 'red') ? 'white' : 'red';
+  
+}
 
 const media =()=>{
     let q = matchMedia("(max-width:700px)");
@@ -37,3 +42,4 @@ const media =()=>{
     }
 }
 onload = media;
+

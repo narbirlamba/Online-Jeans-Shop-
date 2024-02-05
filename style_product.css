@@ -1,0 +1,303 @@
+
+.container{
+    width: 100%;
+    background: #d0eaff;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.header{
+    align-self: start;
+    width: 100%;
+}
+.header_nav2{
+background: white;
+}
+.product{
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    margin: 30px 0;
+}
+.gallery_product{
+    flex-basis: 47%;
+    background: #3f393b;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+}
+.gallery_product img{
+    width: 100%;
+    display: block;
+}
+.details{
+    flex-basis: 53%;
+    background: #fff;
+    padding:0 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: #777;
+    position: relative;
+}
+.details h1{
+   font-size: 35px;
+   color: #333;
+   margin: 0.5rem 0;
+}
+.details h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    margin: 0.5rem 0;
+
+}
+.details h3{
+    color: #00d874;
+    margin-bottom: 20px;
+    margin: 0.3rem 0 1rem 0;
+
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size_select{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.size_select p{
+    width: 70px;
+}
+.size_select input:checked + span{
+    color: blue;
+    font-weight: 900;
+}
+.size_select input{
+    display: none;
+}
+.size_select span{
+    cursor: pointer;
+    padding: 5px;
+    margin-right:10px ;
+}
+.quantity_select{
+    display: flex;
+    align-items: center;
+}
+.quantity_select p{
+    width: 75px;
+}
+.quantity_select input{
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 40px;
+    border-radius: 12px;
+}
+form button{
+    background:#1c9011;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin: 10px 0;
+    box-shadow: 0 10px 10px rgba(85,63,240,.25);
+    cursor: pointer;
+}
+form button + button{
+    background: #553ff0;
+}
+form button:hover{
+    box-shadow: 0 10px 10px #26991bba;
+}
+form button + button:hover{
+    box-shadow: 0 10px 10px #614ef3ba;
+}
+form button:active{
+    background:#32aa27;
+}
+form button + button:active{
+    background: #7665f3;
+
+}
+.controls{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.489);
+    margin: 10px;
+    cursor: pointer;
+}
+.btn.active{
+    background: #4934ed;
+}
+.details .fa-heart{
+    position: absolute;
+    transform: scale(2.2);
+    right: 40px;
+    top: 40px;
+    filter: drop-shadow(0px 0px 4px black);
+    cursor: pointer;
+}
+.details .fa-heart:hover{
+    filter: drop-shadow(0px 0px 6px rgb(241, 87, 11));
+
+}
+
+@media(max-width:700px){
+    .container{
+        width: 100%;
+        background: #d0eaff00;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: start;
+       height:fit-content;
+    }
+    .header{
+        align-self: start;
+        width: 100%;
+    }
+    .header_nav2{
+    background: white;
+    }
+    .product{
+        width: 100%;
+        max-width: 750px;
+        display: flex;
+        margin: 0px 0;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: center;
+    }
+   
+    .gallery_product{
+        flex-basis: 70%;
+        background: #3f393b;
+
+        transform: scale(1);
+        box-shadow: 5px 0px 10px 10px rgba(0,0,0,.0);
+    }
+    .gallery_product img{
+        width: 100%;
+        display: block;
+        height: 300px;
+    }
+    .details{
+        flex-basis: 100%;
+        background: #ffffff;
+        padding:0 30px;
+        box-shadow: 5px 0px 10px 10px rgba(0, 0, 0, 0);
+        font-size: 13px;
+        font-weight: 500;
+        color: #777;
+    }
+    .details h1{
+       font-size: 30px;
+       color: #333;
+       margin: 0.5rem 0;
+    }
+    .details h2{
+        font-size: 25px;
+        font-weight: 600;
+        color: #555;
+        margin: 0.5rem 0;
+    }
+    .details h3{
+        color: #00d874;
+        margin-bottom: 20px;
+        margin: 0.3rem 0 1rem 0;
+    }
+    .details form{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .size_select{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        height:10px;
+    }
+    .size_select p{
+        width: 70px;
+    }
+    .size_select input:checked + span{
+        color: blue;
+        font-weight: 900;
+    }
+    .size_select input{
+        display: none;
+    }
+    .size_select span{
+        cursor: pointer;
+        padding: 5px;
+        margin-right:10px ;
+    }
+    .quantity_select{
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    .quantity_select p{
+        width: 75px;
+    }
+    .quantity_select input{
+        background: #eee;
+        border: 0;
+        outline: 0;
+        padding: 2px 2px 2px 15px;
+        width: 30px;
+        border-radius: 12px;
+    }
+    form button{
+        background:#1c9011;
+        color: #fff;
+        font-size: 17px;
+        width: 70%;
+        padding: 10px;
+        border-radius: 30px;
+        border: 0;
+        outline: 0;
+        margin: 5px 0;
+        margin-left: 15%;
+        box-shadow: 0 10px 10px rgba(85,63,240,.25);
+        cursor: pointer;
+    }
+    form button + button{
+        background: #553ff0;
+    }
+    form button:hover{
+        box-shadow: 0 10px 10px #26991bba;
+    
+    }
+    form button + button:hover{
+        box-shadow: 0 10px 10px #614ef3ba;
+    
+    }
+    form button:active{
+        background:#32aa27;
+    
+    }
+    form button + button:active{
+        background: #7665f3;
+    
+    }
+}
